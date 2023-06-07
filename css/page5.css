@@ -1,0 +1,277 @@
+* { margin: 0; padding: 0; } 
+
+html { overflow-x: hidden; } 
+
+.clear { clear: both; } 
+
+a { text-decoration: none; } 
+#wrap { width: 1000px; margin: 0 auto; position: relative; /*border: solid 1px red; */}
+
+a { text-decoration: none; } 
+
+header { display: flex; border-bottom: 0.5px solid #9F8338; margin-bottom: 1%; /*10px*/
+ justify-content: space-between; } 
+
+header #top-menu { width: 250px; position: relative; top: 18px; left: 700px; } 
+
+header #top-menu a { font-size: 0.75em; /*12px*/
+ color: #CEC2A0; } 
+
+/* header #top-menu a:hover { font-weight: 600; }  */
+
+
+header #main-menu { position: relative; top: 65px; margin-top: 1%; /*10px*/
+ margin-left: 22px; /*12px*/
+ width: 100%; } 
+
+header #main-menu a { font-size: 14px /*14px*/}
+
+header ul { display: flex; list-style-type: none; } 
+
+header ul img { width: 13px; margin-right: 2px; } 
+
+header ul li { margin: 1px; } 
+
+header ul li:hover { border-bottom: 2px solid #836826; } 
+
+header a { text-decoration: none; color: #715714; font-weight: 350; } 
+
+.logo img { width: 125px; position: relative; top: 3px; left: 5px; } 
+
+
+.main-img { position: relative; display: flex; flex-flow: column; justify-content: center; align-items: center; } 
+
+.main-img img { width: 950px; height: 342px; } 
+
+.main-img p { position: relative; bottom: 300px; line-height: 30px; color: #624C11; } 
+
+@media (max-width:768px) {
+ #wrap {
+ margin: 0 auto; /* border: solid 1px red; */}
+
+ header { display: flex; border-bottom: 0.5px solid #9F8338; margin-bottom: 1%; /*10px*/
+ justify-content: center}
+
+ header #top-menu { width: 100%; position: relative; top: 15px; left: 276px; } 
+
+ header #main-menu { position: relative; top: 20px; right: 480px; flex-direction: row; margin-top: 1%; /*10px*/
+ margin-left: 4px; /*12px*/
+ width: 100%; } 
+
+ .logo img { width: 60px; position: relative; top: 5px; left: 4px; } 
+
+ header ul li { margin: 2px; } 
+
+ header ul img { width: 10px; margin-right: 1px; } 
+
+ header #main-menu a { font-size: 6px; /*14px*/}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) { header { width: 100%; } 
+
+ header #top-menu { width: 100%; left: 600px; } 
+
+ header #main-menu { width: 100%; position: relative; top: 60px; right: 110px; } 
+
+ header #main-menu a { font-size: 14px; /*14px*/
+ width: 100%; } 
+
+ header #main-menu li { width: 135px; } 
+
+
+ header ul li { margin: 1px; } 
+ }
+
+/*---------------------------------------------------------------------------------*/
+main { width: 973px; height: 234px; margin-bottom: 110px; /* border: 1px solid red; */
+ background-color: #F5F5E4; } 
+
+main p { position: relative; top: 40px; left: 10px; z-index: 3; font-size: 17px; font-weight: bold; color: #624C11; } 
+
+main button { width: 108px; height: 35px; background-color: #9F8338; border: 1px solid #9F8338; color: #EEEEDD; border-radius: 20px; position: relative; top: 60px; left: 10px; } 
+
+main .img-section { float: right; animation: slide-up 2.4s ease-out; margin-right: 15px; position: relative; bottom: 25px; } 
+
+@keyframes slide-up { 
+ 0% { transform: translateY(20px); opacity: 0; } 
+
+ 100% { transform: translateY(0); opacity: 1; } 
+ }
+
+main .img-section img { width: 163px; } 
+
+@media (max-width:768px) { main { width: 768px; height: 200px; } 
+
+ main p { position: relative; top: 40px; left: 10px; z-index: 3; font-size: 13px; font-weight: bold; color: #624C11; } 
+
+
+ main .img-section { float: right; animation: slide-up 2.4s ease-out; margin-right: 15px; position: relative; bottom: 25px; right: 260px; } 
+
+
+ main .img-section img { width: 90px; } 
+ }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { main .img-section img { width: 150px; position: relative; right: 90px; } 
+ }
+/*---------------------------------------------------------------------------------*/
+.textarea-section-h3 { font-size: 22px; color: #624C11; margin-bottom: 9px; } 
+
+.textarea-section { display: flex; /* flex-flow: column; justify-content: center; align-items: center; */
+ float: left; margin-bottom: 50px; } 
+
+.textarea-section textarea { width: 566px; height: 288px; border-radius: 16px; padding: 10px; } 
+
+.file { display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 30px; float: right; } 
+
+.file .file-1,
+.file-2,
+.file-3,
+.file-4 { width: 180px; height: 150px; background-color: #ece3ca8c; margin: 5px; display: flex; justify-content: center; align-items: center; } 
+
+.file input { width: 66px; height: 22px; background-color: #624C11; } 
+
+.file-btn { padding: 10px 20px; background-color: #9F8338; color: white; border-radius: 7px; margin-left: 880px; } 
+
+
+@media (max-width:768px){
+ .textarea-section-h3 { font-size: 22px; color: #624C11; margin-left: 9px; margin-bottom: 9px; } 
+
+ .textarea-section { display: flex; flex-flow: column; /* flex-flow: column; justify-content: center; align-items: center; */
+ clear: both; margin-bottom: 10px; } 
+
+ .textarea-section textarea { width: 470px; height: 288px; border-radius: 16px; padding: 10px; margin-left: 4px; } 
+
+ .file { display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 30px; margin-right: 613px; clear: both; } 
+
+ .file-btn { padding: 10px 20px; background-color: #9F8338; color: white; border-radius: 7px; position: relative; right: 450px; bottom: 65px; } 
+ }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+ .textarea-section textarea { width: 430px; margin-left: 10px; } 
+ .file { margin-right: 130px; } 
+ }
+/*--------------------------------------------------------------------------*/
+
+#recipe-share { margin-bottom: 30px; } 
+
+.recipe-share-h { font-size: 18px; color: #624C11; border-bottom: 0.5px solid #9F8338; padding: 5px; margin-top: 30px; margin-bottom: 10px; display: block; } 
+
+.recipe-share-h span { font-size: 12px; font-weight: 400; color: #BDB08C; position: relative; left: 15px; bottom: 2px; } 
+
+.recipe-share-more a { font-size: 12px; font-weight: 400; color: #BDB08C; position: relative; left: 486px; bottom: 2px; } 
+
+.recipe-share-more a:hover { font-weight: bold; } 
+
+#recipe-share .share-text { font-size: 15px; line-height: 30px; color: #624C11; margin-left: 6px; } 
+
+#recipe-share .share-text p:hover { font-weight: bold; } 
+
+#recipe-share .share-text span { font-size: 13px; color: #BDB08C; } 
+
+#recipe-share .share-text .span1 { margin-left: 434px; margin-bottom: 1px; } 
+
+#recipe-share .share-text .span2 { margin-left: 293px; margin-bottom: 1px; } 
+
+#recipe-share .share-text .span3 { margin-left: 322px; margin-bottom: 1px; } 
+
+#recipe-share .share-text .span4 { margin-left: 563px; margin-bottom: 1px; } 
+
+#recipe-share .share-text .span5 { margin-left: 369px; margin-bottom: 1px; } 
+
+
+#recipe-share .share-text .span6 { margin-left: 399px; margin-bottom: 1px; } 
+
+
+#recipe-share .share-text .span7 { margin-left: 535px; margin-bottom: 1px; } 
+
+
+#recipe-share .share-text .span8 { margin-left: 323px; margin-bottom: 1px; } 
+
+
+#recipe-share .share-text .span9 { margin-left: 313px; margin-bottom: 1px; } 
+
+
+#recipe-share .share-text .span10 { margin-left: 517px; margin-bottom: 1px; } 
+
+#recipe-share .share-text .span11 { margin-left: 370px; margin-bottom: 1px; } 
+
+.pagination { display: flex; list-style-type: none; justify-content: center; align-items: center; margin-top: 20px; } 
+
+.pagination li { margin: 15px; color: #624C11; } 
+
+.pagination li a { color: #ACA695; } 
+
+@media (max-width:768px) {
+ #recipe-share .share-text { font-size: 11px; line-height: 24px; color: #624C11; margin-left: 6px; } 
+
+ .pagination { position: relative; right: 240px; } 
+
+ .pagination li { margin: 13px; color: #624C11; font-size: 12px; } 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+ #recipe-share .share-text .span1 { margin-left: 320px; margin-bottom: 1px; } 
+ 
+ #recipe-share .share-text .span2 { margin-left: 179px; margin-bottom: 1px; } 
+ 
+ #recipe-share .share-text .span3 { margin-left: 207px; margin-bottom: 1px; } 
+ 
+ #recipe-share .share-text .span4 { margin-left: 448px; margin-bottom: 1px; } 
+ 
+ #recipe-share .share-text .span5 { margin-left: 254px; margin-bottom: 1px; } 
+ 
+ 
+ #recipe-share .share-text .span6 { margin-left: 284px; margin-bottom: 1px; } 
+ 
+ 
+ #recipe-share .share-text .span7 { margin-left: 419px; margin-bottom: 1px; } 
+ 
+ 
+ #recipe-share .share-text .span8 { margin-left: 208px; margin-bottom: 1px; } 
+ 
+ 
+ #recipe-share .share-text .span9 { margin-left: 199px; margin-bottom: 1px; } 
+ 
+ 
+ #recipe-share .share-text .span10 { margin-left: 403px; margin-bottom: 1px; } 
+ 
+ #recipe-share .share-text .span11 { margin-left: 255px; margin-bottom: 1px; } 
+
+ .pagination { position: relative; right: 50px; } 
+ }
+/*---------------------------------------------------------------------------------*/
+
+/*footer*/
+footer { width: 100%; height: 176px; background-color: #ECE6D5; margin-top: 30px; position: relative; /*absolute에서 바꿈*/
+ left: 0; display: flex; justify-content: space-between; } 
+
+.footer-logo { width: 128px; height: 109px; position: relative; top: 20px; left: 10px; margin-right: 20px; } 
+
+footer .footer-left { display: flex; padding-left: 20px; } 
+
+footer .footer-left ul { list-style-type: none; } 
+
+footer .footer-left li { margin: 7px; color: #9F8338; position: relative; top: 19px; left: 20px; font-size: 14px; font-weight: 400; } 
+
+footer .footer-right { display: flex; color: #9F8338; flex-flow: column; margin-top: 20px; padding-right: 30px; } 
+
+footer .tell { width: 19px; height: 18px; margin: 10px; position: relative; right: 32px; top: 18px; } 
+
+footer .footer-right h3 { position: relative; bottom: 10px; } 
+
+footer .footer-right span { font-size: 14px; font-weight: 400; } 
+
+footer .sns { display: flex; list-style-type: none; position: relative; left: 38px; } 
+
+footer .sns img { width: 29px; margin: 8px; } 
+
+@media (max-width:768px){
+ .footer-logo { width: 80px; height: 76px; top: 40px; } 
+
+ footer .footer-left li { margin: 7px; color: #9F8338; position: relative; top: 14px; left: 1px; font-size: 11px; font-weight: 400; } 
+
+ footer .footer-right { display: flex; color: #9F8338; flex-flow: column; margin-top: 20px; padding-right: 0px; } 
+
+ footer .footer-right h3 { position: relative; bottom: 10px; font-size: 10px; } 
+ footer .sns { display: flex; list-style-type: none; position: relative; left: 1px; } 
+ 
+ footer .sns img { width: 29px; margin: 8px; } 
+ }
